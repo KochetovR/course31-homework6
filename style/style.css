@@ -269,6 +269,7 @@ header {
 .close-modal:focus {
   fill: var(--accent-color);
   cursor: pointer;
+  outline: 0;
 }
 
 .close-svg {
@@ -349,6 +350,10 @@ header {
   align-items: center;
 }
 
+.agree-text {
+  margin-left: 35px;
+}
+
 .input-agree {
   position: absolute;
   width: 1px;
@@ -360,7 +365,10 @@ header {
   overflow: hidden;
 }
 
-.icon-agree {
+.form-agree::after {
+  content: '';
+  position: absolute;
+
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -370,7 +378,7 @@ header {
   border-radius: 2px;
 }
 
-.form-agree input:checked + .icon-agree {
+.input-agree:checked + .form-agree::after {
   border-color: transparent;
   background-image: url(../images/full-check.svg);
   background-color: var(--accent-color);
@@ -510,18 +518,15 @@ header {
   bottom: 0;
   width: 100%;
   height: 70px;
-  display: block;
-
-  /* padding: 27px 0px; */
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background-color: rgba(47, 48, 58, 0.8);
   color: var(--primary-white-color);
   font-weight: bold;
 }
-.work-name p {
-  margin-top: 27px;
-}
+
 /* team */
 .team {
   padding: 94px 0;
@@ -785,7 +790,7 @@ header {
 
   display: block;
   width: 370px;
-  height: 294px;
+  height: 295px;
   padding: 63px 24px;
 
   background-color: rgba(33, 150, 243, 0.9);
