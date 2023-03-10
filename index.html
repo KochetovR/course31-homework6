@@ -13,25 +13,25 @@
 <body>
     <!--Шапка сайта-->
     <header>
-        <div class="container header-div">
+        <div class="container header__div">
           <nav class="nav">
             <a class="logo" href="./index.html">
-                Web<span class="logo-type">Studio</span></a>
-            <ul class="list header-link">
-                <li class="item"><a class="nav-link current" href="./index.html">Студия</a></li>
-                <li class="item"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
-                <li class="item"><a class="nav-link" href="">Контакты</a></li>
+                Web<span class="logo__type">Studio</span></a>
+            <ul class="list nav__list">
+                <li class="nav__item"><a class="nav__link current" href="./index.html">Студия</a></li>
+                <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
+                <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
             </ul>
           </nav>
-          <ul class="list header-contacts">
-            <li class="item">
+          <ul class="list contacts__list">
+            <li class="contacts__item">
                 <a class="nav-contacts" href="mailto:info@devstudio.com">
                     <svg class="svg-mail">
                         <use href="./images/symbol-defs.svg#icon-envelope"></use>
                     </svg>
                     info@devstudio.com</a>
             </li>
-            <li class="item">
+            <li class="contacts__item">
                 <a class="nav-contacts" href="tel:+380961111111">
                     <svg class="svg-tel">
                         <use href="./images/symbol-defs.svg#icon-mobile"></use>
@@ -327,8 +327,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        
+        </section> 
     </main>
 <!--футер-->
     <footer class="footer"> 
@@ -404,48 +403,30 @@
                 </svg>
             </button>
             <form class="hero-form">
-                <span class="hero-appeal">Оставьте свои данные, мы вам перезвоним</span>
-                <ul>
-                    <li class="list">
-                        <label class="hero-label">
-                            <span class="name-lable">Имя</span>
-                            <input type="text" name="name" class="hero-form-input">
-                            <svg class="hero-form-svg">
-                                <use href="./images/symbol-defs.svg#icon-person"></use>
-                            </svg>
-                        </label>
-                    </li>
-                    <li class="list">
-                        <lable class="hero-label">
-                            <span class="name-lable">Телефон</span>
-                            <input type="tel" name="tel" class="hero-form-input">
-                            <svg class="hero-form-svg">
+                <h2 class="hero-appeal">Оставьте свои данные, мы вам перезвоним</h2>
+                <label class="hero-label">
+                    <span class="name-lable">Имя</span>
+                    <input type="text" name="name" class="hero-form-input">
+                    <svg class="hero-form-svg">
+                            <use href="./images/symbol-defs.svg#icon-person"></use>
+                    </svg>
+                </label>
+                <label class="hero-label">
+                    <span class="name-lable">Телефон</span>
+                    <input type="tel" name="tel" class="hero-form-input">
+                        <svg class="hero-form-svg">
                                 <use href="./images/symbol-defs.svg#icon-phone"></use>
-                            </svg>
-                        </lable>
-                    </li>
-                    <li class="list">
-                        <lable class="hero-label">
-                            <span class="name-lable">Почта</span>
-                            <input type="email" name="email" class="hero-form-input">
-                            <svg class="hero-form-svg">
-                                <use href="./images/symbol-defs.svg#icon-email-black"></use>
-                            </svg>
-                        </lable>
-                    </li>
-                    <li class="list">
-                        <lable class="hero-label">
-                            <span class="name-lable">Комментарий</span>
-                            <textarea name="comment" rows="7" placeholder="Введите текст"></textarea>
-                        </lable>
-                    </li>
-                </ul>
+                        </svg>
+                </label>
+                <label class="hero-label">
+                    <span class="name-lable">Комментарий</span>
+                    <textarea name="comment" rows="7" placeholder="Введите текст"></textarea>
+                </label>
                 <input type="checkbox" name="checkbox" class="input-agree" id="checkbox">
                 <label class="form-agree" for="checkbox">
-                    <span class="agree-text">Соглашаюсь с рассылкой и принимаю&#8287</span>
+                    <span class="agree-text">Соглашаюсь с рассылкой и принимаю&#8287 </span>
                     <a href="">Условия договора</a>
                 </label>
-                
                 <button type="submit" class="hero-form-button">
                     <span>Отправить</span>
                 </button>

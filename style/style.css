@@ -65,33 +65,33 @@ header {
   border-bottom: 1px;
 }
 
-.header-div {
+.header__div {
   display: flex;
   align-items: center;
 }
-.header-div .nav {
+.header__div .nav {
   display: flex;
   align-items: center;
   font-weight: 500;
   letter-spacing: 0.02em;
 }
 
-.header-link {
+.nav__list {
   display: flex;
 }
-.header-link .item {
+.nav__item {
   margin-right: 50px;
 }
-.header-link .item:last-child {
+.nav__item:last-child {
   margin-right: 0;
 }
-.header-contacts {
+.contacts__list {
   display: flex;
   margin-left: auto;
   align-items: center;
 }
 
-.header-contacts .item:first-child {
+.contacts__item:first-child {
   margin-right: 50px;
 }
 
@@ -105,10 +105,10 @@ header {
   line-height: 1.19;
   text-decoration: none;
 }
-.logo-type {
+.logo__type {
   color: var(--primary-black-color);
 }
-.nav-link {
+.nav__link {
   position: relative;
   display: block;
   padding: 32px 0;
@@ -118,14 +118,14 @@ header {
   color: var(--title-text-color);
   text-decoration: none;
 }
-.nav-link:focus,
-.nav-link:hover {
+.nav__link:focus,
+.nav__link:hover {
   color: var(--accent-color);
 }
-.nav .nav-link.current {
+.nav__link.current {
   color: var(--accent-color);
 }
-.nav-link.current::after {
+.nav__link.current::after {
   content: '';
 
   position: absolute;
@@ -675,7 +675,7 @@ header {
 .header-portfolio {
   border-bottom: 1px solid #ececec;
 }
-.header-div {
+.header__div {
   display: flex;
   align-items: center;
 }
